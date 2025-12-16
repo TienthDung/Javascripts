@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Confirm
+        var result = confirm("Are you over 18?");
+
+        if (result == true) {
+            console.log("Over 18");
+        } else {
+            console.log("Below 18");
+        }
+
+        // 2. Prompt
+        var name = prompt("Nhap ten cua ban", "Nguyen Van A");
+        console.log(name);
+
+        // 3. setTimeout
+        setTimeout( function() {
+            console.log("You have waited for 5 seconds");
+        }, 5000 )
+
+        // 4. setInterval
+        var counter = 0;
+        var a1;
+        a1 = 
+        setInterval( function() {
+            console.log(counter);
+            counter++;
+            
+            if (counter > 5) {
+                clearInterval(a1);
+                console.log("Stop setInterval");
+            }
+        }, 1000)
+
+        // 6. Typeof
+        var b = "Hello";
+        console.log(typeof b);
+
+        // 7. Index of
+        var myString = "My name is TienthDung";
+        console.log(myString.length);
+        console.log(myString.indexOf("is"));
+        
+        
+        
+    </script>
+    
+</body>
+</html>
